@@ -1,0 +1,1393 @@
+2025-08-31 22:30:49,933 - support-agent - INFO - Building LangGraph workflow
+2025-08-31 22:30:49,957 - support-agent - INFO - LangGraph workflow built successfully
+2025-08-31 22:35:52,408 - support-agent - INFO - Building LangGraph workflow
+2025-08-31 22:35:52,425 - support-agent - INFO - LangGraph workflow built successfully
+2025-08-31 22:36:12,801 - support-agent - INFO - Root endpoint accessed
+2025-08-31 22:36:12,805 - support-agent - INFO - Received ticket: ID=TECH-001, Subject=Server Error in Production
+2025-08-31 22:36:12,805 - support-agent - INFO - Processing ticket with data: {"ticket_id": "TECH-001", "subject": "Server Error in Production", "description": "Our application is showing 500 errors when users try to access the dashboard. This started happening..."}
+2025-08-31 22:36:12,805 - support-agent - INFO - Invoking graph for ticket TECH-001
+2025-08-31 22:36:12,877 - support-agent - ERROR - Unexpected error processing ticket TECH-001
+Traceback (most recent call last):
+  File "/mnt/d/langgraph-support-agent/app/server.py", line 129, in resolve_ticket
+    if result.error:
+       ^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'error'
+2025-08-31 22:36:24,713 - support-agent - INFO - Root endpoint accessed
+2025-08-31 22:36:24,716 - support-agent - INFO - Received ticket: ID=TECH-001, Subject=Server Error in Production
+2025-08-31 22:36:24,716 - support-agent - INFO - Processing ticket with data: {"ticket_id": "TECH-001", "subject": "Server Error in Production", "description": "Our application is showing 500 errors when users try to access the dashboard. This started happening..."}
+2025-08-31 22:36:24,716 - support-agent - INFO - Invoking graph for ticket TECH-001
+2025-08-31 22:36:24,719 - support-agent - ERROR - Unexpected error processing ticket TECH-001
+Traceback (most recent call last):
+  File "/mnt/d/langgraph-support-agent/app/server.py", line 129, in resolve_ticket
+    if result.error:
+       ^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'error'
+2025-08-31 22:36:36,674 - support-agent - INFO - Received request on /api/process_ticket endpoint
+2025-08-31 22:36:36,674 - support-agent - INFO - Processing ticket ID=TECH-001 with subject: Server Error in Production
+2025-08-31 22:36:36,676 - support-agent - ERROR - Unexpected error processing ticket on /api/process_ticket endpoint
+Traceback (most recent call last):
+  File "/mnt/d/langgraph-support-agent/app/server.py", line 223, in process_ticket
+    if result.error:
+       ^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'error'
+2025-08-31 22:36:50,816 - support-agent - INFO - Root endpoint accessed
+2025-08-31 22:36:50,819 - support-agent - INFO - Received ticket: ID=TEST-001, Subject=Test API Call
+2025-08-31 22:36:50,819 - support-agent - INFO - Processing ticket with data: {"ticket_id": "TEST-001", "subject": "Test API Call", "description": "This is a test to check if the API is working."}
+2025-08-31 22:36:50,820 - support-agent - INFO - Invoking graph for ticket TEST-001
+2025-08-31 22:36:50,822 - support-agent - ERROR - Unexpected error processing ticket TEST-001
+Traceback (most recent call last):
+  File "/mnt/d/langgraph-support-agent/app/server.py", line 129, in resolve_ticket
+    if result.error:
+       ^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'error'
+2025-08-31 22:38:01,919 - support-agent - INFO - Root endpoint accessed
+2025-08-31 22:38:01,922 - support-agent - INFO - Received ticket: ID=TECH-001, Subject=Server Error in Production
+2025-08-31 22:38:01,922 - support-agent - INFO - Processing ticket with data: {"ticket_id": "TECH-001", "subject": "Server Error in Production", "description": "Our application is showing 500 errors when users try to access the dashboard. This started happening..."}
+2025-08-31 22:38:01,922 - support-agent - INFO - Invoking graph for ticket TECH-001
+2025-08-31 22:38:01,925 - support-agent - ERROR - Unexpected error processing ticket TECH-001
+Traceback (most recent call last):
+  File "/mnt/d/langgraph-support-agent/app/server.py", line 129, in resolve_ticket
+    if result.error:
+       ^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'error'
+2025-08-31 22:38:03,026 - support-agent - INFO - Received ticket: ID=BILL-001, Subject=Refund Request
+2025-08-31 22:38:03,027 - support-agent - INFO - Processing ticket with data: {"ticket_id": "BILL-001", "subject": "Refund Request", "description": "I need a refund for my last invoice. I was charged twice for the same month."}
+2025-08-31 22:38:03,027 - support-agent - INFO - Invoking graph for ticket BILL-001
+2025-08-31 22:38:03,034 - support-agent - ERROR - Unexpected error processing ticket BILL-001
+Traceback (most recent call last):
+  File "/mnt/d/langgraph-support-agent/app/server.py", line 126, in resolve_ticket
+    result = graph.invoke(state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/langgraph-support-agent/venv/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3026, in invoke
+    for chunk in self.stream(
+  File "/mnt/d/langgraph-support-agent/venv/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2675, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-08-31 22:38:04,058 - support-agent - INFO - Received ticket: ID=ESC-001, Subject=URGENT: Large Refund Demand
+2025-08-31 22:38:04,058 - support-agent - INFO - Processing ticket with data: {"ticket_id": "ESC-001", "subject": "URGENT: Large Refund Demand", "description": "I demand a $5000 refund immediately for poor service! This is unacceptable and I want it processed t..."}
+2025-08-31 22:38:04,058 - support-agent - INFO - Invoking graph for ticket ESC-001
+2025-08-31 22:38:04,067 - support-agent - ERROR - Unexpected error processing ticket ESC-001
+Traceback (most recent call last):
+  File "/mnt/d/langgraph-support-agent/app/server.py", line 126, in resolve_ticket
+    result = graph.invoke(state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/langgraph-support-agent/venv/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3026, in invoke
+    for chunk in self.stream(
+  File "/mnt/d/langgraph-support-agent/venv/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2675, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-08-31 22:38:05,073 - support-agent - INFO - Received ticket: ID=SEC-001, Subject=Password Reset Help
+2025-08-31 22:38:05,074 - support-agent - INFO - Processing ticket with data: {"ticket_id": "SEC-001", "subject": "Password Reset Help", "description": "I forgot my password. My current password is Password123! and my email is user@example.com. Can you ..."}
+2025-08-31 22:38:05,074 - support-agent - INFO - Invoking graph for ticket SEC-001
+2025-08-31 22:38:05,082 - support-agent - ERROR - Unexpected error processing ticket SEC-001
+Traceback (most recent call last):
+  File "/mnt/d/langgraph-support-agent/app/server.py", line 126, in resolve_ticket
+    result = graph.invoke(state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/langgraph-support-agent/venv/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3026, in invoke
+    for chunk in self.stream(
+  File "/mnt/d/langgraph-support-agent/venv/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2675, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-08-31 22:38:06,757 - support-agent - INFO - Root endpoint accessed
+2025-08-31 22:38:06,760 - support-agent - INFO - Received ticket: ID=TECH-001, Subject=Server Error in Production
+2025-08-31 22:38:06,760 - support-agent - INFO - Processing ticket with data: {"ticket_id": "TECH-001", "subject": "Server Error in Production", "description": "Our application is showing 500 errors when users try to access the dashboard. This started happening..."}
+2025-08-31 22:38:06,760 - support-agent - INFO - Invoking graph for ticket TECH-001
+2025-08-31 22:38:06,763 - support-agent - ERROR - Unexpected error processing ticket TECH-001
+Traceback (most recent call last):
+  File "/mnt/d/langgraph-support-agent/app/server.py", line 129, in resolve_ticket
+    if result.error:
+       ^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'error'
+2025-08-31 22:38:07,769 - support-agent - INFO - Received ticket: ID=BILL-001, Subject=Refund Request
+2025-08-31 22:38:07,769 - support-agent - INFO - Processing ticket with data: {"ticket_id": "BILL-001", "subject": "Refund Request", "description": "I need a refund for my last invoice. I was charged twice for the same month."}
+2025-08-31 22:38:07,769 - support-agent - INFO - Invoking graph for ticket BILL-001
+2025-08-31 22:38:07,778 - support-agent - ERROR - Unexpected error processing ticket BILL-001
+Traceback (most recent call last):
+  File "/mnt/d/langgraph-support-agent/app/server.py", line 126, in resolve_ticket
+    result = graph.invoke(state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/langgraph-support-agent/venv/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3026, in invoke
+    for chunk in self.stream(
+  File "/mnt/d/langgraph-support-agent/venv/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2675, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-08-31 22:38:08,787 - support-agent - INFO - Received ticket: ID=ESC-001, Subject=URGENT: Large Refund Demand
+2025-08-31 22:38:08,787 - support-agent - INFO - Processing ticket with data: {"ticket_id": "ESC-001", "subject": "URGENT: Large Refund Demand", "description": "I demand a $5000 refund immediately for poor service! This is unacceptable and I want it processed t..."}
+2025-08-31 22:38:08,788 - support-agent - INFO - Invoking graph for ticket ESC-001
+2025-08-31 22:38:08,799 - support-agent - ERROR - Unexpected error processing ticket ESC-001
+Traceback (most recent call last):
+  File "/mnt/d/langgraph-support-agent/app/server.py", line 126, in resolve_ticket
+    result = graph.invoke(state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/langgraph-support-agent/venv/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3026, in invoke
+    for chunk in self.stream(
+  File "/mnt/d/langgraph-support-agent/venv/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2675, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-08-31 22:38:09,807 - support-agent - INFO - Received ticket: ID=SEC-001, Subject=Password Reset Help
+2025-08-31 22:38:09,807 - support-agent - INFO - Processing ticket with data: {"ticket_id": "SEC-001", "subject": "Password Reset Help", "description": "I forgot my password. My current password is Password123! and my email is user@example.com. Can you ..."}
+2025-08-31 22:38:09,808 - support-agent - INFO - Invoking graph for ticket SEC-001
+2025-08-31 22:38:09,825 - support-agent - ERROR - Unexpected error processing ticket SEC-001
+Traceback (most recent call last):
+  File "/mnt/d/langgraph-support-agent/app/server.py", line 126, in resolve_ticket
+    result = graph.invoke(state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/langgraph-support-agent/venv/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3026, in invoke
+    for chunk in self.stream(
+  File "/mnt/d/langgraph-support-agent/venv/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2675, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-08-31 22:38:11,393 - support-agent - INFO - Root endpoint accessed
+2025-08-31 22:38:11,398 - support-agent - INFO - Received ticket: ID=TECH-001, Subject=Server Error in Production
+2025-08-31 22:38:11,398 - support-agent - INFO - Processing ticket with data: {"ticket_id": "TECH-001", "subject": "Server Error in Production", "description": "Our application is showing 500 errors when users try to access the dashboard. This started happening..."}
+2025-08-31 22:38:11,398 - support-agent - INFO - Invoking graph for ticket TECH-001
+2025-08-31 22:38:11,401 - support-agent - ERROR - Unexpected error processing ticket TECH-001
+Traceback (most recent call last):
+  File "/mnt/d/langgraph-support-agent/app/server.py", line 129, in resolve_ticket
+    if result.error:
+       ^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'error'
+2025-08-31 22:38:12,406 - support-agent - INFO - Received ticket: ID=BILL-001, Subject=Refund Request
+2025-08-31 22:38:12,406 - support-agent - INFO - Processing ticket with data: {"ticket_id": "BILL-001", "subject": "Refund Request", "description": "I need a refund for my last invoice. I was charged twice for the same month."}
+2025-08-31 22:38:12,407 - support-agent - INFO - Invoking graph for ticket BILL-001
+2025-08-31 22:38:12,415 - support-agent - ERROR - Unexpected error processing ticket BILL-001
+Traceback (most recent call last):
+  File "/mnt/d/langgraph-support-agent/app/server.py", line 126, in resolve_ticket
+    result = graph.invoke(state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/langgraph-support-agent/venv/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3026, in invoke
+    for chunk in self.stream(
+  File "/mnt/d/langgraph-support-agent/venv/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2675, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-08-31 22:38:13,422 - support-agent - INFO - Received ticket: ID=ESC-001, Subject=URGENT: Large Refund Demand
+2025-08-31 22:38:13,422 - support-agent - INFO - Processing ticket with data: {"ticket_id": "ESC-001", "subject": "URGENT: Large Refund Demand", "description": "I demand a $5000 refund immediately for poor service! This is unacceptable and I want it processed t..."}
+2025-08-31 22:38:13,422 - support-agent - INFO - Invoking graph for ticket ESC-001
+2025-08-31 22:38:13,431 - support-agent - ERROR - Unexpected error processing ticket ESC-001
+Traceback (most recent call last):
+  File "/mnt/d/langgraph-support-agent/app/server.py", line 126, in resolve_ticket
+    result = graph.invoke(state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/langgraph-support-agent/venv/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3026, in invoke
+    for chunk in self.stream(
+  File "/mnt/d/langgraph-support-agent/venv/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2675, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-08-31 22:38:14,437 - support-agent - INFO - Received ticket: ID=SEC-001, Subject=Password Reset Help
+2025-08-31 22:38:14,437 - support-agent - INFO - Processing ticket with data: {"ticket_id": "SEC-001", "subject": "Password Reset Help", "description": "I forgot my password. My current password is Password123! and my email is user@example.com. Can you ..."}
+2025-08-31 22:38:14,438 - support-agent - INFO - Invoking graph for ticket SEC-001
+2025-08-31 22:38:14,447 - support-agent - ERROR - Unexpected error processing ticket SEC-001
+Traceback (most recent call last):
+  File "/mnt/d/langgraph-support-agent/app/server.py", line 126, in resolve_ticket
+    result = graph.invoke(state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/langgraph-support-agent/venv/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3026, in invoke
+    for chunk in self.stream(
+  File "/mnt/d/langgraph-support-agent/venv/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2675, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 50 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-08-31 22:38:16,222 - support-agent - INFO - Root endpoint accessed
+2025-08-31 22:38:16,227 - support-agent - INFO - Received ticket: ID=BILL-001, Subject=Refund Request
+2025-08-31 22:38:16,227 - support-agent - INFO - Processing ticket with data: {"ticket_id": "BILL-001", "subject": "Refund Request", "description": "I need a refund for my last invoice. I was charged twice for the same month."}
+2025-08-31 22:38:16,228 - support-agent - INFO - Invoking graph for ticket BILL-001
+2025-08-31 22:38:16,246 - support-agent - ERROR - Unexpected error processing ticket BILL-001
+Traceback (most recent call last):
+  File "/mnt/d/langgraph-support-agent/app/server.py", line 126, in resolve_ticket
+    result = graph.invoke(state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/langgraph-support-agent/venv/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3026, in invoke
+    for chunk in self.stream(
+  File "/mnt/d/langgraph-support-agent/venv/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2675, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-08-31 22:38:17,037 - support-agent - INFO - Root endpoint accessed
+2025-08-31 22:38:17,040 - support-agent - INFO - Received ticket: ID=TEST-001, Subject=Test API Call
+2025-08-31 22:38:17,040 - support-agent - INFO - Processing ticket with data: {"ticket_id": "TEST-001", "subject": "Test API Call", "description": "This is a test to check if the API is working."}
+2025-08-31 22:38:17,041 - support-agent - INFO - Invoking graph for ticket TEST-001
+2025-08-31 22:38:17,044 - support-agent - ERROR - Unexpected error processing ticket TEST-001
+Traceback (most recent call last):
+  File "/mnt/d/langgraph-support-agent/app/server.py", line 129, in resolve_ticket
+    if result.error:
+       ^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'error'
+2025-08-31 22:38:23,011 - support-agent - INFO - Root endpoint accessed
+2025-08-31 22:38:23,015 - support-agent - INFO - Received ticket: ID=TECH-001, Subject=Server Error in Production
+2025-08-31 22:38:23,016 - support-agent - INFO - Processing ticket with data: {"ticket_id": "TECH-001", "subject": "Server Error in Production", "description": "Our application is showing 500 errors when users try to access the dashboard. This started happening..."}
+2025-08-31 22:38:23,016 - support-agent - INFO - Invoking graph for ticket TECH-001
+2025-08-31 22:38:23,019 - support-agent - ERROR - Unexpected error processing ticket TECH-001
+Traceback (most recent call last):
+  File "/mnt/d/langgraph-support-agent/app/server.py", line 129, in resolve_ticket
+    if result.error:
+       ^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'error'
+2025-08-31 22:38:23,510 - support-agent - INFO - Building LangGraph workflow
+2025-08-31 22:38:23,534 - support-agent - INFO - LangGraph workflow built successfully
+2025-08-31 22:38:24,026 - support-agent - INFO - Received ticket: ID=BILL-001, Subject=Refund Request
+2025-08-31 22:38:24,026 - support-agent - INFO - Processing ticket with data: {"ticket_id": "BILL-001", "subject": "Refund Request", "description": "I need a refund for my last invoice. I was charged twice for the same month."}
+2025-08-31 22:38:24,027 - support-agent - INFO - Invoking graph for ticket BILL-001
+2025-08-31 22:38:24,037 - support-agent - ERROR - Unexpected error processing ticket BILL-001
+Traceback (most recent call last):
+  File "/mnt/d/langgraph-support-agent/app/server.py", line 126, in resolve_ticket
+    result = graph.invoke(state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/langgraph-support-agent/venv/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3026, in invoke
+    for chunk in self.stream(
+  File "/mnt/d/langgraph-support-agent/venv/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2675, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-08-31 22:38:25,045 - support-agent - INFO - Received ticket: ID=ESC-001, Subject=URGENT: Large Refund Demand
+2025-08-31 22:38:25,045 - support-agent - INFO - Processing ticket with data: {"ticket_id": "ESC-001", "subject": "URGENT: Large Refund Demand", "description": "I demand a $5000 refund immediately for poor service! This is unacceptable and I want it processed t..."}
+2025-08-31 22:38:25,046 - support-agent - INFO - Invoking graph for ticket ESC-001
+2025-08-31 22:38:25,057 - support-agent - ERROR - Unexpected error processing ticket ESC-001
+Traceback (most recent call last):
+  File "/mnt/d/langgraph-support-agent/app/server.py", line 126, in resolve_ticket
+    result = graph.invoke(state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/langgraph-support-agent/venv/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3026, in invoke
+    for chunk in self.stream(
+  File "/mnt/d/langgraph-support-agent/venv/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2675, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-08-31 22:38:24,128 - support-agent - INFO - Building LangGraph workflow
+2025-08-31 22:38:24,147 - support-agent - INFO - LangGraph workflow built successfully
+2025-08-31 22:38:24,203 - support-agent - INFO - Received ticket: ID=SEC-001, Subject=Password Reset Help
+2025-08-31 22:38:24,203 - support-agent - INFO - Processing ticket with data: {"ticket_id": "SEC-001", "subject": "Password Reset Help", "description": "I forgot my password. My current password is Password123! and my email is user@example.com. Can you ..."}
+2025-08-31 22:38:24,204 - support-agent - INFO - Invoking graph for ticket SEC-001
+2025-08-31 22:38:24,213 - support-agent - ERROR - Unexpected error processing ticket SEC-001
+Traceback (most recent call last):
+  File "/mnt/d/langgraph-support-agent/app/server.py", line 126, in resolve_ticket
+    result = graph.invoke(state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/langgraph-support-agent/venv/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3026, in invoke
+    for chunk in self.stream(
+  File "/mnt/d/langgraph-support-agent/venv/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2675, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-08-31 22:39:15,743 - support-agent - INFO - Building LangGraph workflow
+2025-08-31 22:39:15,763 - support-agent - INFO - LangGraph workflow built successfully
+2025-08-31 22:44:19,226 - support-agent - INFO - Building LangGraph workflow
+2025-08-31 22:44:19,245 - support-agent - INFO - LangGraph workflow built successfully
+2025-08-31 22:47:05,947 - support-agent - INFO - Root endpoint accessed
+2025-08-31 22:47:05,952 - support-agent - INFO - Received ticket: ID=TECH-001, Subject=Server Error in Production
+2025-08-31 22:47:05,952 - support-agent - INFO - Processing ticket with data: {"ticket_id": "TECH-001", "subject": "Server Error in Production", "description": "Our application is showing 500 errors when users try to access the dashboard. This started happening..."}
+2025-08-31 22:47:05,952 - support-agent - INFO - Invoking graph for ticket TECH-001
+2025-08-31 22:47:06,027 - support-agent - ERROR - Unexpected error processing ticket TECH-001
+Traceback (most recent call last):
+  File "/mnt/d/langgraph-support-agent/app/server.py", line 129, in resolve_ticket
+    if result.error:
+       ^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'error'
+2025-08-31 22:50:22,475 - support-agent - INFO - Root endpoint accessed
+2025-08-31 22:50:22,478 - support-agent - INFO - Received ticket: ID=BILL-001, Subject=Refund Request
+2025-08-31 22:50:22,479 - support-agent - INFO - Processing ticket with data: {"ticket_id": "BILL-001", "subject": "Refund Request", "description": "I need a refund for my last invoice. I was charged twice for the same month."}
+2025-08-31 22:50:22,479 - support-agent - INFO - Invoking graph for ticket BILL-001
+2025-08-31 22:50:22,491 - support-agent - ERROR - Unexpected error processing ticket BILL-001
+Traceback (most recent call last):
+  File "/mnt/d/langgraph-support-agent/app/server.py", line 126, in resolve_ticket
+    result = graph.invoke(state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/langgraph-support-agent/venv/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3026, in invoke
+    for chunk in self.stream(
+  File "/mnt/d/langgraph-support-agent/venv/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2675, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-08-31 23:04:19,999 - support-agent - INFO - Building LangGraph workflow
+2025-08-31 23:04:20,020 - support-agent - INFO - LangGraph workflow built successfully
+2025-08-31 23:07:21,680 - support-agent - INFO - Building LangGraph workflow
+2025-08-31 23:07:21,699 - support-agent - INFO - LangGraph workflow built successfully
+2025-09-01 08:34:06,199 - support-agent - INFO - Building LangGraph workflow
+2025-09-01 08:34:06,215 - support-agent - INFO - LangGraph workflow built successfully
+2025-09-01 08:37:41,498 - support-agent - INFO - Root endpoint accessed
+2025-09-01 08:52:40,603 - support-agent - INFO - Building LangGraph workflow
+2025-09-01 08:52:40,618 - support-agent - INFO - LangGraph workflow built successfully
+2025-09-01 08:52:48,563 - support-agent - INFO - Root endpoint accessed
+2025-09-01 08:54:11,386 - support-agent - INFO - Received request on /api/process_ticket endpoint
+2025-09-01 08:54:11,388 - support-agent - INFO - Processing ticket ID=TECH-123 with subject: Upload failing
+2025-09-01 08:54:11,435 - support-agent - INFO - Successfully processed ticket TECH-123 in 0.05s: category=Technical, escalated=False
+2025-09-01 08:56:06,944 - support-agent - INFO - Building LangGraph workflow
+2025-09-01 08:56:06,974 - support-agent - INFO - LangGraph workflow built successfully
+2025-09-01 08:56:16,254 - support-agent - INFO - Building LangGraph workflow
+2025-09-01 08:56:16,277 - support-agent - INFO - LangGraph workflow built successfully
+2025-09-01 08:56:22,740 - support-agent - INFO - Received request on /api/process_ticket endpoint
+2025-09-01 08:56:22,742 - support-agent - INFO - Processing ticket ID=TECH-123 with subject: Upload failing
+2025-09-01 08:56:22,778 - support-agent - INFO - Successfully processed ticket TECH-123 in 0.04s: category=Technical, escalated=False
+2025-09-01 09:18:22,644 - support-agent - INFO - Received request on /api/process_ticket endpoint
+2025-09-01 09:18:22,644 - support-agent - INFO - Processing ticket ID=BILL-001 with subject: Refund Request
+2025-09-01 09:18:22,663 - support-agent - ERROR - Error processing ticket: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-09-01 09:18:22,670 - support-agent - ERROR - Traceback (most recent call last):
+  File "C:\Users\FAM\langgraph-support-agent\app\server.py", line 236, in process_ticket
+    result = graph.invoke(state)
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 3026, in invoke
+    for chunk in self.stream(
+                 ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<10 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ):
+    ^
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 2675, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+
+2025-09-01 09:18:35,602 - support-agent - INFO - Received request on /api/process_ticket endpoint
+2025-09-01 09:18:35,603 - support-agent - INFO - Processing ticket ID=ESC-001 with subject: URGENT: Large Refund Demand
+2025-09-01 09:18:35,630 - support-agent - ERROR - Error processing ticket: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-09-01 09:18:35,635 - support-agent - ERROR - Traceback (most recent call last):
+  File "C:\Users\FAM\langgraph-support-agent\app\server.py", line 236, in process_ticket
+    result = graph.invoke(state)
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 3026, in invoke
+    for chunk in self.stream(
+                 ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<10 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ):
+    ^
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 2675, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+
+2025-09-01 09:21:13,032 - support-agent - INFO - Received request on /api/process_ticket endpoint
+2025-09-01 09:21:13,032 - support-agent - INFO - Processing ticket ID=ESC-001 with subject: URGENT: Large Refund Demand
+2025-09-01 09:21:13,055 - support-agent - ERROR - Error processing ticket: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-09-01 09:21:13,058 - support-agent - ERROR - Traceback (most recent call last):
+  File "C:\Users\FAM\langgraph-support-agent\app\server.py", line 236, in process_ticket
+    result = graph.invoke(state)
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 3026, in invoke
+    for chunk in self.stream(
+                 ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<10 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ):
+    ^
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 2675, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+
+2025-09-01 09:21:26,313 - support-agent - INFO - Received request on /api/process_ticket endpoint
+2025-09-01 09:21:26,313 - support-agent - INFO - Processing ticket ID=BILL-001 with subject: Refund Request
+2025-09-01 09:21:26,335 - support-agent - ERROR - Error processing ticket: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-09-01 09:21:26,339 - support-agent - ERROR - Traceback (most recent call last):
+  File "C:\Users\FAM\langgraph-support-agent\app\server.py", line 236, in process_ticket
+    result = graph.invoke(state)
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 3026, in invoke
+    for chunk in self.stream(
+                 ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<10 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ):
+    ^
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 2675, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+
+2025-09-01 09:31:37,462 - support-agent - INFO - Received request on /api/process_ticket endpoint
+2025-09-01 09:31:37,463 - support-agent - INFO - Processing ticket ID=BILL-001 with subject: Refund Request
+2025-09-01 09:31:37,511 - support-agent - ERROR - Error processing ticket: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-09-01 09:31:37,515 - support-agent - ERROR - Traceback (most recent call last):
+  File "C:\Users\FAM\langgraph-support-agent\app\server.py", line 236, in process_ticket
+    result = graph.invoke(state)
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 3026, in invoke
+    for chunk in self.stream(
+                 ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<10 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ):
+    ^
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 2675, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+
+2025-09-01 09:31:46,660 - support-agent - INFO - Received request on /api/process_ticket endpoint
+2025-09-01 09:31:46,662 - support-agent - INFO - Processing ticket ID=ESC-001 with subject: Large Refund Request
+2025-09-01 09:31:46,694 - support-agent - ERROR - Error processing ticket: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-09-01 09:31:46,698 - support-agent - ERROR - Traceback (most recent call last):
+  File "C:\Users\FAM\langgraph-support-agent\app\server.py", line 236, in process_ticket
+    result = graph.invoke(state)
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 3026, in invoke
+    for chunk in self.stream(
+                 ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<10 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ):
+    ^
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 2675, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+
+2025-09-01 09:32:10,904 - support-agent - INFO - Building LangGraph workflow
+2025-09-01 09:32:10,949 - support-agent - INFO - LangGraph workflow built successfully
+2025-09-01 09:32:20,945 - support-agent - INFO - Root endpoint accessed
+2025-09-01 09:32:31,055 - support-agent - INFO - Received request on /api/process_ticket endpoint
+2025-09-01 09:32:31,055 - support-agent - INFO - Processing ticket ID=ESC-001 with subject: Large Refund Request
+2025-09-01 09:32:31,086 - support-agent - ERROR - Error processing ticket: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-09-01 09:32:31,090 - support-agent - ERROR - Traceback (most recent call last):
+  File "C:\Users\FAM\langgraph-support-agent\app\server.py", line 236, in process_ticket
+    result = graph.invoke(state)
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 3026, in invoke
+    for chunk in self.stream(
+                 ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<10 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ):
+    ^
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 2675, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+
+2025-09-01 09:34:05,961 - support-agent - INFO - Building LangGraph workflow
+2025-09-01 09:34:05,995 - support-agent - INFO - LangGraph workflow built successfully
+2025-09-01 09:34:17,092 - support-agent - INFO - Building LangGraph workflow
+2025-09-01 09:34:17,119 - support-agent - INFO - LangGraph workflow built successfully
+2025-09-01 09:35:41,997 - support-agent - INFO - Building LangGraph workflow
+2025-09-01 09:35:42,056 - support-agent - INFO - LangGraph workflow built successfully
+2025-09-01 09:37:58,568 - support-agent - INFO - Setting LangGraph runtime configurations
+2025-09-01 09:37:58,710 - support-agent - CRITICAL - Failed to build LangGraph workflow: cannot import name 'RuntimeConfig' from 'langgraph_runtime_inmem' (C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph_runtime_inmem\__init__.py)
+2025-09-01 09:37:58,713 - support-agent - CRITICAL - Traceback (most recent call last):
+  File "C:\Users\FAM\langgraph-support-agent\app\server.py", line 42, in <module>
+    from langgraph_runtime_inmem import RuntimeConfig
+ImportError: cannot import name 'RuntimeConfig' from 'langgraph_runtime_inmem' (C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph_runtime_inmem\__init__.py)
+
+2025-09-01 09:39:05,621 - support-agent - INFO - Received request on /api/process_ticket endpoint
+2025-09-01 09:39:05,621 - support-agent - ERROR - LangGraph workflow not initialized
+2025-09-01 09:40:30,874 - support-agent - INFO - Building LangGraph workflow
+2025-09-01 09:40:30,896 - support-agent - INFO - LangGraph workflow built successfully
+2025-09-01 09:40:30,966 - support-agent - INFO - Received request on /api/process_ticket endpoint
+2025-09-01 09:40:30,966 - support-agent - INFO - Processing ticket ID=ESC-001 with subject: Large Refund Request
+2025-09-01 09:40:31,012 - support-agent - ERROR - Error processing ticket: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-09-01 09:40:31,020 - support-agent - ERROR - Traceback (most recent call last):
+  File "C:\Users\FAM\langgraph-support-agent\app\server.py", line 236, in process_ticket
+    result = graph.invoke(state)
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 3026, in invoke
+    for chunk in self.stream(
+                 ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<10 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ):
+    ^
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 2675, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+
+2025-09-01 09:45:38,971 - support-agent - INFO - Building LangGraph workflow
+2025-09-01 09:45:39,019 - support-agent - INFO - LangGraph workflow built successfully
+2025-09-01 09:45:51,680 - support-agent - INFO - Building LangGraph workflow
+2025-09-01 09:45:51,763 - support-agent - INFO - LangGraph workflow built successfully
+2025-09-01 09:45:57,803 - support-agent - INFO - Received request on /api/process_ticket endpoint
+2025-09-01 09:45:57,804 - support-agent - INFO - Processing ticket ID=ESC-001 with subject: Large Refund Request
+2025-09-01 09:45:57,834 - support-agent - ERROR - Error processing ticket: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-09-01 09:45:57,840 - support-agent - ERROR - Traceback (most recent call last):
+  File "C:\Users\FAM\langgraph-support-agent\app\server.py", line 239, in process_ticket
+    result = graph.invoke(state)
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 3026, in invoke
+    for chunk in self.stream(
+                 ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<10 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ):
+    ^
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 2675, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+
+2025-09-01 09:46:43,144 - support-agent - INFO - Building LangGraph workflow
+2025-09-01 09:46:43,176 - support-agent - INFO - LangGraph workflow built successfully with recursion_limit=50
+2025-09-01 09:46:51,793 - support-agent - INFO - Received request on /api/process_ticket endpoint
+2025-09-01 09:46:51,795 - support-agent - INFO - Processing ticket ID=ESC-001 with subject: Large Refund Request
+2025-09-01 09:46:51,833 - support-agent - ERROR - Error processing ticket: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-09-01 09:46:51,841 - support-agent - ERROR - Traceback (most recent call last):
+  File "C:\Users\FAM\langgraph-support-agent\app\server.py", line 239, in process_ticket
+    result = graph.invoke(state)
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 3026, in invoke
+    for chunk in self.stream(
+                 ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<10 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ):
+    ^
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 2675, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+
+2025-09-01 09:47:53,677 - support-agent - INFO - Building LangGraph workflow
+2025-09-01 09:47:53,716 - support-agent - INFO - LangGraph workflow built successfully with recursion_limit=50
+2025-09-01 09:50:26,753 - support-agent - INFO - Building LangGraph workflow
+2025-09-01 09:50:26,770 - support-agent - WARNING - Graph object does not support recursion_limit property
+2025-09-01 09:50:38,702 - support-agent - INFO - Received request on /api/process_ticket endpoint
+2025-09-01 09:50:38,703 - support-agent - INFO - Processing ticket ID=ESC-001 with subject: Large Refund Request
+2025-09-01 09:50:38,739 - support-agent - ERROR - Error processing ticket: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-09-01 09:50:38,743 - support-agent - ERROR - Traceback (most recent call last):
+  File "C:\Users\FAM\langgraph-support-agent\app\server.py", line 239, in process_ticket
+    result = graph.invoke(state)
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 3026, in invoke
+    for chunk in self.stream(
+                 ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<10 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ):
+    ^
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 2675, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+
+2025-09-01 09:51:28,761 - support-agent - INFO - Building LangGraph workflow
+2025-09-01 09:51:28,832 - support-agent - WARNING - Graph object does not support recursion_limit property
+2025-09-01 09:51:40,553 - support-agent - INFO - Building LangGraph workflow
+2025-09-01 09:51:40,579 - support-agent - WARNING - Graph object does not support recursion_limit property
+2025-09-01 09:51:47,989 - support-agent - INFO - Received request on /api/process_ticket endpoint
+2025-09-01 09:51:47,990 - support-agent - INFO - Processing ticket ID=ESC-001 with subject: Large Refund Request
+2025-09-01 09:51:48,045 - support-agent - ERROR - Error processing ticket: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-09-01 09:51:48,049 - support-agent - ERROR - Traceback (most recent call last):
+  File "C:\Users\FAM\langgraph-support-agent\app\server.py", line 240, in process_ticket
+    result = graph.invoke(state, recursion_limit=50)
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 3026, in invoke
+    for chunk in self.stream(
+                 ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<10 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ):
+    ^
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 2675, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+
+2025-09-01 09:59:23,485 - support-agent - INFO - Building LangGraph workflow
+2025-09-01 09:59:23,518 - support-agent - WARNING - Graph object does not support recursion_limit property
+2025-09-01 09:59:27,674 - support-agent - INFO - Building LangGraph workflow
+2025-09-01 09:59:27,702 - support-agent - WARNING - Graph object does not support recursion_limit property
+2025-09-01 10:00:16,374 - support-agent - INFO - Building LangGraph workflow
+2025-09-01 10:00:16,431 - support-agent - WARNING - Graph object does not support recursion_limit property
+2025-09-01 10:00:28,471 - support-agent - INFO - Received request on /api/process_ticket endpoint
+2025-09-01 10:00:28,472 - support-agent - INFO - Invoking graph for ticket ESC-001 with recursion_limit=50
+2025-09-01 10:00:28,518 - support-agent - ERROR - Error processing ticket: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-09-01 10:00:28,522 - support-agent - ERROR - Traceback (most recent call last):
+  File "C:\Users\FAM\langgraph-support-agent\app\server.py", line 231, in process_ticket
+    result = graph.invoke(state, recursion_limit=rec_limit)
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 3026, in invoke
+    for chunk in self.stream(
+                 ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<10 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ):
+    ^
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 2675, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+
+2025-09-01 10:04:57,085 - support-agent - INFO - Building LangGraph workflow
+2025-09-01 10:04:57,113 - support-agent - WARNING - Graph object does not support recursion_limit property
+2025-09-01 11:28:36,819 - support-agent - INFO - Building LangGraph workflow
+2025-09-01 11:28:36,836 - support-agent - WARNING - Graph object does not support recursion_limit property
+2025-09-01 11:28:36,930 - support-agent - INFO - Received request on /api/process_ticket endpoint
+2025-09-01 11:28:36,931 - support-agent - INFO - Processing ticket ID=ESC-001 with subject: Large Refund Request
+2025-09-01 11:28:36,979 - support-agent - ERROR - Error processing ticket: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-09-01 11:28:36,985 - support-agent - ERROR - Traceback (most recent call last):
+  File "C:\Users\FAM\langgraph-support-agent\app\server.py", line 240, in process_ticket
+    result = graph.invoke(state, recursion_limit=50)
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 3026, in invoke
+    for chunk in self.stream(
+                 ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<10 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ):
+    ^
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 2675, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+
+2025-09-01 13:56:37,375 - support-agent - INFO - Building LangGraph workflow
+2025-09-01 13:56:37,397 - support-agent - WARNING - Graph object does not support recursion_limit property
+2025-09-01 13:56:43,215 - support-agent - INFO - Received request on /api/process_ticket endpoint
+2025-09-01 13:56:43,215 - support-agent - INFO - Processing ticket ID=ESC-001 with subject: Large Refund Request
+2025-09-01 13:56:43,249 - support-agent - ERROR - Error processing ticket: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-09-01 13:56:43,256 - support-agent - ERROR - Traceback (most recent call last):
+  File "C:\Users\FAM\langgraph-support-agent\app\server.py", line 240, in process_ticket
+    result = graph.invoke(state, recursion_limit=50)
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 3026, in invoke
+    for chunk in self.stream(
+                 ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<10 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ):
+    ^
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 2675, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+
+2025-09-01 14:07:34,713 - support-agent - INFO - Received request on /api/process_ticket endpoint
+2025-09-01 14:07:34,714 - support-agent - INFO - Processing ticket ID=T1 with subject: Server Down Issue
+2025-09-01 14:07:34,725 - support-agent - INFO - Successfully processed ticket T1 in 0.01s: category=Technical, escalated=False
+2025-09-01 14:08:12,511 - support-agent - INFO - Received request on /api/process_ticket endpoint
+2025-09-01 14:08:12,512 - support-agent - INFO - Processing ticket ID=T2 with subject: Billing Refund Request
+2025-09-01 14:08:12,538 - support-agent - ERROR - Error processing ticket: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-09-01 14:08:12,541 - support-agent - ERROR - Traceback (most recent call last):
+  File "C:\Users\FAM\langgraph-support-agent\app\server.py", line 240, in process_ticket
+    result = graph.invoke(state, recursion_limit=50)
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 3026, in invoke
+    for chunk in self.stream(
+                 ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<10 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ):
+    ^
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 2675, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+
+2025-09-01 14:08:37,020 - support-agent - INFO - Received request on /api/process_ticket endpoint
+2025-09-01 14:08:37,021 - support-agent - INFO - Processing ticket ID=T2 with subject: Billing Refund Request
+2025-09-01 14:08:37,042 - support-agent - ERROR - Error processing ticket: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-09-01 14:08:37,044 - support-agent - ERROR - Traceback (most recent call last):
+  File "C:\Users\FAM\langgraph-support-agent\app\server.py", line 240, in process_ticket
+    result = graph.invoke(state, recursion_limit=50)
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 3026, in invoke
+    for chunk in self.stream(
+                 ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<10 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ):
+    ^
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 2675, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+
+2025-09-01 14:09:31,089 - support-agent - INFO - Received request on /api/process_ticket endpoint
+2025-09-01 14:09:31,089 - support-agent - INFO - Processing ticket ID=T3 with subject: URGENT: Refund Demand
+2025-09-01 14:09:31,113 - support-agent - ERROR - Error processing ticket: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-09-01 14:09:31,117 - support-agent - ERROR - Traceback (most recent call last):
+  File "C:\Users\FAM\langgraph-support-agent\app\server.py", line 240, in process_ticket
+    result = graph.invoke(state, recursion_limit=50)
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 3026, in invoke
+    for chunk in self.stream(
+                 ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<10 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ):
+    ^
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 2675, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+
+2025-09-01 14:19:17,371 - support-agent - INFO - Building LangGraph workflow
+2025-09-01 14:19:17,397 - support-agent - WARNING - Graph object does not support recursion_limit property
+2025-09-01 14:19:25,986 - support-agent - INFO - Received request on /api/process_ticket endpoint
+2025-09-01 14:19:25,988 - support-agent - INFO - Processing ticket ID=T1 with subject: Server Down Issue
+2025-09-01 14:19:26,024 - support-agent - INFO - Successfully processed ticket T1 in 0.03s: category=Technical, escalated=False
+2025-09-01 14:19:30,980 - support-agent - INFO - Received request on /api/process_ticket endpoint
+2025-09-01 14:19:30,981 - support-agent - INFO - Processing ticket ID=T2 with subject: Billing Refund Request
+2025-09-01 14:19:31,007 - support-agent - ERROR - Error processing ticket: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-09-01 14:19:31,014 - support-agent - ERROR - Traceback (most recent call last):
+  File "C:\Users\FAM\langgraph-support-agent\app\server.py", line 240, in process_ticket
+    result = graph.invoke(state, recursion_limit=50)
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 3026, in invoke
+    for chunk in self.stream(
+                 ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<10 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ):
+    ^
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 2675, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+
+2025-09-01 14:19:34,604 - support-agent - INFO - Received request on /api/process_ticket endpoint
+2025-09-01 14:19:34,605 - support-agent - INFO - Processing ticket ID=T3 with subject: URGENT: Refund Demand
+2025-09-01 14:19:34,628 - support-agent - ERROR - Error processing ticket: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-09-01 14:19:34,633 - support-agent - ERROR - Traceback (most recent call last):
+  File "C:\Users\FAM\langgraph-support-agent\app\server.py", line 240, in process_ticket
+    result = graph.invoke(state, recursion_limit=50)
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 3026, in invoke
+    for chunk in self.stream(
+                 ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<10 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ):
+    ^
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 2675, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+
+2025-09-01 14:20:17,679 - support-agent - INFO - Building LangGraph workflow
+2025-09-01 14:20:17,712 - support-agent - WARNING - Graph object does not support recursion_limit property
+2025-09-01 14:20:22,381 - support-agent - INFO - Received request on /api/process_ticket endpoint
+2025-09-01 14:20:22,383 - support-agent - INFO - Processing ticket ID=T1 with subject: Server Down Issue
+2025-09-01 14:20:22,410 - support-agent - INFO - Successfully processed ticket T1 in 0.03s: category=Technical, escalated=False
+2025-09-01 14:20:25,391 - support-agent - INFO - Received request on /api/process_ticket endpoint
+2025-09-01 14:20:25,403 - support-agent - INFO - Processing ticket ID=T2 with subject: Billing Refund Request
+2025-09-01 14:20:25,433 - support-agent - ERROR - Error processing ticket: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-09-01 14:20:25,440 - support-agent - ERROR - Traceback (most recent call last):
+  File "C:\Users\FAM\langgraph-support-agent\app\server.py", line 240, in process_ticket
+    result = graph.invoke(state, recursion_limit=50)
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 3026, in invoke
+    for chunk in self.stream(
+                 ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<10 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ):
+    ^
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 2675, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+
+2025-09-01 14:22:14,443 - support-agent - INFO - Building LangGraph workflow
+2025-09-01 14:22:14,472 - support-agent - WARNING - Graph object does not support recursion_limit property
+2025-09-01 14:22:19,928 - support-agent - INFO - Building LangGraph workflow
+2025-09-01 14:22:19,951 - support-agent - WARNING - Graph object does not support recursion_limit property
+2025-09-01 14:22:29,091 - support-agent - INFO - Received request on /api/process_ticket endpoint
+2025-09-01 14:22:29,091 - support-agent - INFO - Processing ticket ID=T1 with subject: Server Down Issue
+2025-09-01 14:22:29,112 - support-agent - INFO - Successfully processed ticket T1 in 0.02s: category=Technical, escalated=False
+2025-09-01 14:22:31,148 - support-agent - INFO - Received request on /api/process_ticket endpoint
+2025-09-01 14:22:31,149 - support-agent - INFO - Processing ticket ID=T2 with subject: Server Down Issue
+2025-09-01 14:22:31,159 - support-agent - INFO - Successfully processed ticket T2 in 0.01s: category=Technical, escalated=False
+2025-09-01 14:22:33,207 - support-agent - INFO - Received request on /api/process_ticket endpoint
+2025-09-01 14:22:33,208 - support-agent - INFO - Processing ticket ID=T3 with subject: Billing Refund Request
+2025-09-01 14:22:33,220 - support-agent - ERROR - Error processing ticket: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-09-01 14:22:33,224 - support-agent - ERROR - Traceback (most recent call last):
+  File "C:\Users\FAM\langgraph-support-agent\app\server.py", line 240, in process_ticket
+    result = graph.invoke(state, recursion_limit=50)
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 3026, in invoke
+    for chunk in self.stream(
+                 ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<10 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ):
+    ^
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 2675, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+
+2025-09-01 14:22:35,426 - support-agent - INFO - Received request on /api/process_ticket endpoint
+2025-09-01 14:22:35,432 - support-agent - INFO - Processing ticket ID=T4 with subject: Urgent: Money Back
+2025-09-01 14:22:35,457 - support-agent - ERROR - Error processing ticket: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-09-01 14:22:35,459 - support-agent - ERROR - Traceback (most recent call last):
+  File "C:\Users\FAM\langgraph-support-agent\app\server.py", line 240, in process_ticket
+    result = graph.invoke(state, recursion_limit=50)
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 3026, in invoke
+    for chunk in self.stream(
+                 ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<10 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ):
+    ^
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 2675, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+
+2025-09-01 14:22:37,495 - support-agent - INFO - Received request on /api/process_ticket endpoint
+2025-09-01 14:22:37,495 - support-agent - INFO - Processing ticket ID=T5 with subject: Office Hours
+2025-09-01 14:22:37,498 - support-agent - INFO - Successfully processed ticket T5 in 0.00s: category=General, escalated=False
+2025-09-01 14:22:39,528 - support-agent - INFO - Received request on /api/process_ticket endpoint
+2025-09-01 14:22:39,548 - support-agent - INFO - Processing ticket ID=T6 with subject: Payment Issue
+2025-09-01 14:22:39,572 - support-agent - ERROR - Error processing ticket: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-09-01 14:22:39,577 - support-agent - ERROR - Traceback (most recent call last):
+  File "C:\Users\FAM\langgraph-support-agent\app\server.py", line 240, in process_ticket
+    result = graph.invoke(state, recursion_limit=50)
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 3026, in invoke
+    for chunk in self.stream(
+                 ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<10 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ):
+    ^
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 2675, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+
+2025-09-01 14:24:26,940 - support-agent - INFO - Building LangGraph workflow
+2025-09-01 14:24:26,966 - support-agent - WARNING - Graph object does not support recursion_limit property
+2025-09-01 14:24:36,722 - support-agent - INFO - Received request on /api/process_ticket endpoint
+2025-09-01 14:24:36,723 - support-agent - INFO - Processing ticket ID=T1 with subject: Server Down Issue
+2025-09-01 14:24:36,745 - support-agent - INFO - Successfully processed ticket T1 in 0.02s: category=Technical, escalated=False
+2025-09-01 14:24:38,785 - support-agent - INFO - Received request on /api/process_ticket endpoint
+2025-09-01 14:24:38,785 - support-agent - INFO - Processing ticket ID=T2 with subject: Server Down Issue
+2025-09-01 14:24:38,788 - support-agent - INFO - Successfully processed ticket T2 in 0.00s: category=Technical, escalated=False
+2025-09-01 14:24:40,835 - support-agent - INFO - Received request on /api/process_ticket endpoint
+2025-09-01 14:24:40,836 - support-agent - INFO - Processing ticket ID=T3 with subject: Billing Refund Request
+2025-09-01 14:24:40,848 - support-agent - ERROR - Error processing ticket: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-09-01 14:24:40,853 - support-agent - ERROR - Traceback (most recent call last):
+  File "C:\Users\FAM\langgraph-support-agent\app\server.py", line 240, in process_ticket
+    result = graph.invoke(state, recursion_limit=50)
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 3026, in invoke
+    for chunk in self.stream(
+                 ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<10 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ):
+    ^
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 2675, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+
+2025-09-01 14:24:43,084 - support-agent - INFO - Received request on /api/process_ticket endpoint
+2025-09-01 14:24:43,085 - support-agent - INFO - Processing ticket ID=T4 with subject: Urgent: Money Back
+2025-09-01 14:24:43,097 - support-agent - ERROR - Error processing ticket: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-09-01 14:24:43,100 - support-agent - ERROR - Traceback (most recent call last):
+  File "C:\Users\FAM\langgraph-support-agent\app\server.py", line 240, in process_ticket
+    result = graph.invoke(state, recursion_limit=50)
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 3026, in invoke
+    for chunk in self.stream(
+                 ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<10 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ):
+    ^
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 2675, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+
+2025-09-01 14:24:45,152 - support-agent - INFO - Received request on /api/process_ticket endpoint
+2025-09-01 14:24:45,152 - support-agent - INFO - Processing ticket ID=T5 with subject: Office Hours
+2025-09-01 14:24:45,155 - support-agent - INFO - Successfully processed ticket T5 in 0.00s: category=General, escalated=False
+2025-09-01 14:24:47,181 - support-agent - INFO - Received request on /api/process_ticket endpoint
+2025-09-01 14:24:47,181 - support-agent - INFO - Processing ticket ID=T6 with subject: Payment Issue
+2025-09-01 14:24:47,199 - support-agent - ERROR - Error processing ticket: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-09-01 14:24:47,211 - support-agent - ERROR - Traceback (most recent call last):
+  File "C:\Users\FAM\langgraph-support-agent\app\server.py", line 240, in process_ticket
+    result = graph.invoke(state, recursion_limit=50)
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 3026, in invoke
+    for chunk in self.stream(
+                 ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<10 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ):
+    ^
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 2675, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+
+2025-09-01 14:25:58,879 - support-agent - INFO - Building LangGraph workflow
+2025-09-01 14:25:58,901 - support-agent - WARNING - Graph object does not support recursion_limit property
+2025-09-01 14:30:11,177 - support-agent - INFO - Building LangGraph workflow
+2025-09-01 14:30:11,229 - support-agent - WARNING - Graph object does not support recursion_limit property
+2025-09-01 14:31:04,709 - support-agent - INFO - Received request on /api/process_ticket endpoint
+2025-09-01 14:31:04,709 - support-agent - INFO - Processing ticket ID=T1 with subject: Server Down Issue
+2025-09-01 14:31:04,738 - support-agent - INFO - Successfully processed ticket T1 in 0.03s: category=Technical, escalated=False
+2025-09-01 14:31:06,789 - support-agent - INFO - Received request on /api/process_ticket endpoint
+2025-09-01 14:31:06,793 - support-agent - INFO - Processing ticket ID=T2 with subject: Server Down Issue
+2025-09-01 14:31:06,796 - support-agent - INFO - Successfully processed ticket T2 in 0.00s: category=Technical, escalated=False
+2025-09-01 14:31:08,838 - support-agent - INFO - Received request on /api/process_ticket endpoint
+2025-09-01 14:31:08,838 - support-agent - INFO - Processing ticket ID=T3 with subject: Billing Refund Request
+2025-09-01 14:31:08,852 - support-agent - ERROR - Error processing ticket: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-09-01 14:31:08,857 - support-agent - ERROR - Traceback (most recent call last):
+  File "C:\Users\FAM\langgraph-support-agent\app\server.py", line 243, in process_ticket
+    result = graph.invoke(state, recursion_limit=50)
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 3026, in invoke
+    for chunk in self.stream(
+                 ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<10 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ):
+    ^
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 2675, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+
+2025-09-01 14:31:11,125 - support-agent - INFO - Received request on /api/process_ticket endpoint
+2025-09-01 14:31:11,126 - support-agent - INFO - Processing ticket ID=T4 with subject: Urgent: Money Back
+2025-09-01 14:31:11,138 - support-agent - ERROR - Error processing ticket: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-09-01 14:31:11,141 - support-agent - ERROR - Traceback (most recent call last):
+  File "C:\Users\FAM\langgraph-support-agent\app\server.py", line 243, in process_ticket
+    result = graph.invoke(state, recursion_limit=50)
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 3026, in invoke
+    for chunk in self.stream(
+                 ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<10 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ):
+    ^
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 2675, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+
+2025-09-01 14:31:13,197 - support-agent - INFO - Received request on /api/process_ticket endpoint
+2025-09-01 14:31:13,197 - support-agent - INFO - Processing ticket ID=T5 with subject: Office Hours
+2025-09-01 14:31:13,203 - support-agent - INFO - Successfully processed ticket T5 in 0.00s: category=General, escalated=False
+2025-09-01 14:31:15,235 - support-agent - INFO - Received request on /api/process_ticket endpoint
+2025-09-01 14:31:15,236 - support-agent - INFO - Processing ticket ID=T6 with subject: Payment Issue
+2025-09-01 14:31:15,259 - support-agent - ERROR - Error processing ticket: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-09-01 14:31:15,262 - support-agent - ERROR - Traceback (most recent call last):
+  File "C:\Users\FAM\langgraph-support-agent\app\server.py", line 243, in process_ticket
+    result = graph.invoke(state, recursion_limit=50)
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 3026, in invoke
+    for chunk in self.stream(
+                 ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<10 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ):
+    ^
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 2675, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+
+2025-09-01 14:33:04,320 - support-agent - INFO - Building LangGraph workflow
+2025-09-01 14:33:04,364 - support-agent - CRITICAL - Failed to build LangGraph workflow: 'CompiledStateGraph' object has no attribute 'compile'
+2025-09-01 14:33:04,367 - support-agent - CRITICAL - Traceback (most recent call last):
+  File "C:\Users\FAM\langgraph-support-agent\app\server.py", line 44, in <module>
+    app = graph.compile(recursion_limit=50)
+          ^^^^^^^^^^^^^
+AttributeError: 'CompiledStateGraph' object has no attribute 'compile'
+
+2025-09-01 14:33:51,961 - support-agent - INFO - Building LangGraph workflow
+2025-09-01 14:33:51,995 - support-agent - CRITICAL - Failed to build LangGraph workflow: 'CompiledStateGraph' object has no attribute 'compile'
+2025-09-01 14:33:52,002 - support-agent - CRITICAL - Traceback (most recent call last):
+  File "C:\Users\FAM\langgraph-support-agent\app\server.py", line 44, in <module>
+    app = graph.compile(recursion_limit=50)
+          ^^^^^^^^^^^^^
+AttributeError: 'CompiledStateGraph' object has no attribute 'compile'
+
+2025-09-01 14:34:34,325 - support-agent - INFO - Building LangGraph workflow
+2025-09-01 14:34:34,355 - support-agent - CRITICAL - Failed to build LangGraph workflow: 'CompiledStateGraph' object has no attribute 'compile'
+2025-09-01 14:34:34,371 - support-agent - CRITICAL - Traceback (most recent call last):
+  File "C:\Users\FAM\langgraph-support-agent\app\server.py", line 44, in <module>
+    app = graph.compile(recursion_limit=50)
+          ^^^^^^^^^^^^^
+AttributeError: 'CompiledStateGraph' object has no attribute 'compile'
+
+2025-09-01 14:40:15,277 - support-agent - INFO - Building LangGraph workflow
+2025-09-01 14:40:15,325 - support-agent - INFO - Graph compiled with recursion limit set to 50
+2025-09-01 14:41:08,448 - support-agent - INFO - Building LangGraph workflow
+2025-09-01 14:41:08,467 - support-agent - INFO - Graph compiled successfully
+2025-09-01 14:41:08,502 - support-agent - INFO - Test invoke result: {'category': 'General', 'context': ['General FAQ and office hours info.', 'Support contact details.', 'Product documentation and user guides.', 'Company policies and service level agreements.'], 'draft_reply': "Hello! Thank you for contacting our support team about: ''.\n\nI understand your concern: ''.\n\nHere's some information that may help:\nGeneral FAQ and office hours info.\nSupport contact details.\nProduct documentation and user guides.\nCompany policies and service level agreements.\n\nPlease let me know if you need any further assistance.\nBest regards,\nSupport Team", 'all_drafts': ["Hello! Thank you for contacting our support team about: ''.\n\nI understand your concern: ''.\n\nHere's some information that may help:\nGeneral FAQ and office hours info.\nSupport contact details.\nProduct documentation and user guides.\nCompany policies and service level agreements.\n\nPlease let me know if you need any further assistance.\nBest regards,\nSupport Team"], 'all_feedback': [], 'review_decision': 'approved', 'final_reply': "Hello! Thank you for contacting our support team about: ''.\n\nI understand your concern: ''.\n\nHere's some information that may help:\nGeneral FAQ and office hours info.\nSupport contact details.\nProduct documentation and user guides.\nCompany policies and service level agreements.\n\nPlease let me know if you need any further assistance.\nBest regards,\nSupport Team", 'retries': 0, 'escalated': False}
+2025-09-01 14:41:53,875 - support-agent - INFO - Building LangGraph workflow
+2025-09-01 14:41:53,876 - support-agent - INFO - Graph compiled with recursion limit set to 50
+2025-09-01 14:42:04,097 - support-agent - INFO - Building LangGraph workflow
+2025-09-01 14:42:04,142 - support-agent - INFO - Graph compiled successfully
+2025-09-01 14:42:04,194 - support-agent - INFO - Test invoke result: {'category': 'General', 'context': ['General FAQ and office hours info.', 'Support contact details.', 'Product documentation and user guides.', 'Company policies and service level agreements.'], 'draft_reply': "Hello! Thank you for contacting our support team about: ''.\n\nI understand your concern: ''.\n\nHere's some information that may help:\nGeneral FAQ and office hours info.\nSupport contact details.\nProduct documentation and user guides.\nCompany policies and service level agreements.\n\nPlease let me know if you need any further assistance.\nBest regards,\nSupport Team", 'all_drafts': ["Hello! Thank you for contacting our support team about: ''.\n\nI understand your concern: ''.\n\nHere's some information that may help:\nGeneral FAQ and office hours info.\nSupport contact details.\nProduct documentation and user guides.\nCompany policies and service level agreements.\n\nPlease let me know if you need any further assistance.\nBest regards,\nSupport Team"], 'all_feedback': [], 'review_decision': 'approved', 'final_reply': "Hello! Thank you for contacting our support team about: ''.\n\nI understand your concern: ''.\n\nHere's some information that may help:\nGeneral FAQ and office hours info.\nSupport contact details.\nProduct documentation and user guides.\nCompany policies and service level agreements.\n\nPlease let me know if you need any further assistance.\nBest regards,\nSupport Team", 'retries': 0, 'escalated': False}
+2025-09-01 16:12:12,620 - support-agent - INFO - Building LangGraph workflow
+2025-09-01 16:12:13,074 - support-agent - INFO - Graph compiled successfully
+2025-09-01 16:12:13,235 - support-agent - INFO - Test invoke result: {'category': 'General', 'context': ['General FAQ and office hours info.', 'Support contact details.', 'Product documentation and user guides.', 'Company policies and service level agreements.'], 'draft_reply': "Hello! Thank you for contacting our support team about: ''.\n\nI understand your concern: ''.\n\nHere's some information that may help:\nGeneral FAQ and office hours info.\nSupport contact details.\nProduct documentation and user guides.\nCompany policies and service level agreements.\n\nPlease let me know if you need any further assistance.\nBest regards,\nSupport Team", 'all_drafts': ["Hello! Thank you for contacting our support team about: ''.\n\nI understand your concern: ''.\n\nHere's some information that may help:\nGeneral FAQ and office hours info.\nSupport contact details.\nProduct documentation and user guides.\nCompany policies and service level agreements.\n\nPlease let me know if you need any further assistance.\nBest regards,\nSupport Team"], 'all_feedback': [], 'retries': 0, 'escalated': False, 'error': {'node': 'review', 'message': "cannot access local variable 'feedback' where it is not associated with a value"}}
+2025-09-01 16:14:03,754 - support-agent - INFO - Building LangGraph workflow
+2025-09-01 16:14:03,793 - support-agent - INFO - Graph compiled successfully
+2025-09-01 16:14:03,818 - support-agent - INFO - Test invoke result: {'category': 'General', 'context': ['General FAQ and office hours info.', 'Support contact details.', 'Product documentation and user guides.', 'Company policies and service level agreements.'], 'draft_reply': "Hello! Thank you for contacting our support team about: ''.\n\nI understand your concern: ''.\n\nHere's some information that may help:\nGeneral FAQ and office hours info.\nSupport contact details.\nProduct documentation and user guides.\nCompany policies and service level agreements.\n\nPlease let me know if you need any further assistance.\nBest regards,\nSupport Team", 'all_drafts': ["Hello! Thank you for contacting our support team about: ''.\n\nI understand your concern: ''.\n\nHere's some information that may help:\nGeneral FAQ and office hours info.\nSupport contact details.\nProduct documentation and user guides.\nCompany policies and service level agreements.\n\nPlease let me know if you need any further assistance.\nBest regards,\nSupport Team"], 'all_feedback': [], 'retries': 0, 'escalated': False, 'error': {'node': 'review', 'message': "cannot access local variable 'feedback' where it is not associated with a value"}}
+2025-09-01 16:15:00,069 - support-agent - INFO - Building LangGraph workflow
+2025-09-01 16:15:00,070 - support-agent - INFO - Graph compiled successfully
+2025-09-01 16:15:00,074 - support-agent - CRITICAL - Failed to build LangGraph workflow: 'FastAPI' object has no attribute 'invoke'
+2025-09-01 16:15:00,080 - support-agent - CRITICAL - Traceback (most recent call last):
+  File "C:\Users\FAM\langgraph-support-agent\app\server.py", line 46, in <module>
+    result = app.invoke(
+             ^^^^^^^^^^
+AttributeError: 'FastAPI' object has no attribute 'invoke'
+
+2025-09-01 16:15:25,754 - support-agent - INFO - Building LangGraph workflow
+2025-09-01 16:15:25,755 - support-agent - INFO - Graph compiled successfully
+2025-09-01 16:15:25,756 - support-agent - CRITICAL - Failed to build LangGraph workflow: 'FastAPI' object has no attribute 'invoke'
+2025-09-01 16:15:25,760 - support-agent - CRITICAL - Traceback (most recent call last):
+  File "C:\Users\FAM\langgraph-support-agent\app\server.py", line 46, in <module>
+    result = app.invoke(
+             ^^^^^^^^^^
+AttributeError: 'FastAPI' object has no attribute 'invoke'
+
+2025-09-01 16:15:41,381 - support-agent - INFO - Building LangGraph workflow
+2025-09-01 16:15:41,382 - support-agent - INFO - Graph compiled successfully
+2025-09-01 16:15:41,382 - support-agent - CRITICAL - Failed to build LangGraph workflow: 'FastAPI' object has no attribute 'invoke'
+2025-09-01 16:15:41,385 - support-agent - CRITICAL - Traceback (most recent call last):
+  File "C:\Users\FAM\langgraph-support-agent\app\server.py", line 46, in <module>
+    result = app.invoke(
+             ^^^^^^^^^^
+AttributeError: 'FastAPI' object has no attribute 'invoke'
+
+2025-09-01 16:15:59,849 - support-agent - INFO - Received request on /api/process_ticket endpoint
+2025-09-01 16:15:59,850 - support-agent - INFO - Processing ticket ID=T1 with subject: Server Down Issue
+2025-09-01 16:15:59,871 - support-agent - INFO - Successfully processed ticket T1 in 0.02s: category=Technical, escalated=False
+2025-09-01 16:16:06,094 - support-agent - INFO - Received request on /api/process_ticket endpoint
+2025-09-01 16:16:06,095 - support-agent - INFO - Processing ticket ID=T2 with subject: Billing Refund Request
+2025-09-01 16:16:06,134 - support-agent - ERROR - Error processing ticket: Recursion limit of 50 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-09-01 16:16:06,139 - support-agent - ERROR - Traceback (most recent call last):
+  File "C:\Users\FAM\langgraph-support-agent\app\server.py", line 248, in process_ticket
+    result = graph.invoke(state, config={"recursion_limit": 50})
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 3026, in invoke
+    for chunk in self.stream(
+                 ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<10 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ):
+    ^
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 2675, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 50 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+
+2025-09-01 16:16:34,642 - support-agent - INFO - Received request on /api/process_ticket endpoint
+2025-09-01 16:16:34,643 - support-agent - INFO - Processing ticket ID=T3 with subject: URGENT: Refund Demand
+2025-09-01 16:16:34,676 - support-agent - ERROR - Error processing ticket: Recursion limit of 50 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-09-01 16:16:34,678 - support-agent - ERROR - Traceback (most recent call last):
+  File "C:\Users\FAM\langgraph-support-agent\app\server.py", line 248, in process_ticket
+    result = graph.invoke(state, config={"recursion_limit": 50})
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 3026, in invoke
+    for chunk in self.stream(
+                 ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<10 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ):
+    ^
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 2675, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 50 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+
+2025-09-01 16:16:53,339 - support-agent - INFO - Building LangGraph workflow
+2025-09-01 16:16:53,340 - support-agent - INFO - Graph compiled successfully
+2025-09-01 16:16:53,340 - support-agent - CRITICAL - Failed to build LangGraph workflow: 'FastAPI' object has no attribute 'invoke'
+2025-09-01 16:16:53,344 - support-agent - CRITICAL - Traceback (most recent call last):
+  File "C:\Users\FAM\langgraph-support-agent\app\server.py", line 46, in <module>
+    result = app.invoke(
+             ^^^^^^^^^^
+AttributeError: 'FastAPI' object has no attribute 'invoke'
+
+2025-09-01 16:17:04,401 - support-agent - INFO - Building LangGraph workflow
+2025-09-01 16:17:04,402 - support-agent - INFO - Graph compiled successfully
+2025-09-01 16:17:04,402 - support-agent - CRITICAL - Failed to build LangGraph workflow: 'FastAPI' object has no attribute 'invoke'
+2025-09-01 16:17:04,406 - support-agent - CRITICAL - Traceback (most recent call last):
+  File "C:\Users\FAM\langgraph-support-agent\app\server.py", line 46, in <module>
+    result = app.invoke(
+             ^^^^^^^^^^
+AttributeError: 'FastAPI' object has no attribute 'invoke'
+
+2025-09-01 16:17:09,260 - support-agent - INFO - Received request on /api/process_ticket endpoint
+2025-09-01 16:17:09,260 - support-agent - INFO - Processing ticket ID=T3 with subject: URGENT: Refund Demand
+2025-09-01 16:17:09,379 - support-agent - ERROR - Error processing ticket: Recursion limit of 100 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-09-01 16:17:09,382 - support-agent - ERROR - Traceback (most recent call last):
+  File "C:\Users\FAM\langgraph-support-agent\app\server.py", line 248, in process_ticket
+    result = graph.invoke(state, config={"recursion_limit": 100})
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 3026, in invoke
+    for chunk in self.stream(
+                 ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<10 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ):
+    ^
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 2675, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 100 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+
+2025-09-01 16:20:02,906 - support-agent - INFO - Building LangGraph workflow
+2025-09-01 16:20:02,907 - support-agent - INFO - Graph compiled successfully
+2025-09-01 16:20:02,908 - support-agent - CRITICAL - Failed to build LangGraph workflow: 'FastAPI' object has no attribute 'invoke'
+2025-09-01 16:20:02,911 - support-agent - CRITICAL - Traceback (most recent call last):
+  File "C:\Users\FAM\langgraph-support-agent\app\server.py", line 46, in <module>
+    result = app.invoke(
+             ^^^^^^^^^^
+AttributeError: 'FastAPI' object has no attribute 'invoke'
+
+2025-09-01 16:22:14,404 - support-agent - INFO - Building LangGraph workflow
+2025-09-01 16:22:14,404 - support-agent - INFO - Graph compiled successfully
+2025-09-01 16:22:14,405 - support-agent - CRITICAL - Failed to build LangGraph workflow: 'FastAPI' object has no attribute 'invoke'
+2025-09-01 16:22:14,409 - support-agent - CRITICAL - Traceback (most recent call last):
+  File "C:\Users\FAM\langgraph-support-agent\app\server.py", line 46, in <module>
+    result = app.invoke(
+             ^^^^^^^^^^
+AttributeError: 'FastAPI' object has no attribute 'invoke'
+
+2025-09-01 16:22:14,534 - support-agent - INFO - Received request on /api/process_ticket endpoint
+2025-09-01 16:22:14,536 - support-agent - INFO - Processing ticket ID=T3 with subject: URGENT: Refund Demand
+2025-09-01 16:22:14,672 - support-agent - ERROR - Error processing ticket: Recursion limit of 100 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-09-01 16:22:14,677 - support-agent - ERROR - Traceback (most recent call last):
+  File "C:\Users\FAM\langgraph-support-agent\app\server.py", line 248, in process_ticket
+    result = graph.invoke(state, config={"recursion_limit": 100})
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 3026, in invoke
+    for chunk in self.stream(
+                 ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<10 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ):
+    ^
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 2675, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 100 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+
+2025-09-01 16:24:24,172 - support-agent - INFO - Building LangGraph workflow
+2025-09-01 16:24:24,173 - support-agent - INFO - Graph compiled successfully
+2025-09-01 16:24:24,173 - support-agent - CRITICAL - Failed to build LangGraph workflow: 'FastAPI' object has no attribute 'invoke'
+2025-09-01 16:24:24,176 - support-agent - CRITICAL - Traceback (most recent call last):
+  File "C:\Users\FAM\langgraph-support-agent\app\server.py", line 46, in <module>
+    result = app.invoke(
+             ^^^^^^^^^^
+AttributeError: 'FastAPI' object has no attribute 'invoke'
+
+2025-09-01 16:26:12,724 - support-agent - INFO - Building LangGraph workflow
+2025-09-01 16:26:12,759 - support-agent - INFO - Graph compiled successfully
+2025-09-01 16:26:12,790 - support-agent - INFO - Test invoke result: {'category': 'General', 'context': ['General FAQ and office hours info.', 'Support contact details.', 'Product documentation and user guides.', 'Company policies and service level agreements.'], 'draft_reply': "Hello! Thank you for contacting our support team about: ''.\n\nI understand your concern: ''.\n\nHere's some information that may help:\nGeneral FAQ and office hours info.\nSupport contact details.\nProduct documentation and user guides.\nCompany policies and service level agreements.\n\nPlease let me know if you need any further assistance.\nBest regards,\nSupport Team", 'all_drafts': ["Hello! Thank you for contacting our support team about: ''.\n\nI understand your concern: ''.\n\nHere's some information that may help:\nGeneral FAQ and office hours info.\nSupport contact details.\nProduct documentation and user guides.\nCompany policies and service level agreements.\n\nPlease let me know if you need any further assistance.\nBest regards,\nSupport Team"], 'all_feedback': [], 'retries': 0, 'escalated': False, 'error': {'node': 'review', 'message': "cannot access local variable 'feedback' where it is not associated with a value"}}
+2025-09-01 16:27:17,130 - support-agent - INFO - Building LangGraph workflow
+2025-09-01 16:27:17,154 - support-agent - INFO - Graph compiled successfully
+2025-09-01 16:27:17,182 - support-agent - INFO - Test invoke result: {'category': 'General', 'context': ['General FAQ and office hours info.', 'Support contact details.', 'Product documentation and user guides.', 'Company policies and service level agreements.'], 'draft_reply': "Hello! Thank you for contacting our support team about: ''.\n\nI understand your concern: ''.\n\nHere's some information that may help:\nGeneral FAQ and office hours info.\nSupport contact details.\nProduct documentation and user guides.\nCompany policies and service level agreements.\n\nPlease let me know if you need any further assistance.\nBest regards,\nSupport Team", 'all_drafts': ["Hello! Thank you for contacting our support team about: ''.\n\nI understand your concern: ''.\n\nHere's some information that may help:\nGeneral FAQ and office hours info.\nSupport contact details.\nProduct documentation and user guides.\nCompany policies and service level agreements.\n\nPlease let me know if you need any further assistance.\nBest regards,\nSupport Team"], 'all_feedback': [], 'review_decision': 'approved', 'review_feedback': 'Auto-approved: no issues detected.', 'final_reply': "Hello! Thank you for contacting our support team about: ''.\n\nI understand your concern: ''.\n\nHere's some information that may help:\nGeneral FAQ and office hours info.\nSupport contact details.\nProduct documentation and user guides.\nCompany policies and service level agreements.\n\nPlease let me know if you need any further assistance.\nBest regards,\nSupport Team", 'retries': 0, 'escalated': False}
+2025-09-01 16:27:50,000 - support-agent - INFO - Received request on /api/process_ticket endpoint
+2025-09-01 16:27:50,001 - support-agent - INFO - Processing ticket ID=T1 with subject: Server Down Issue
+2025-09-01 16:27:50,007 - support-agent - INFO - Successfully processed ticket T1 in 0.00s: category=Technical, escalated=False
+2025-09-01 16:27:57,259 - support-agent - INFO - Received request on /api/process_ticket endpoint
+2025-09-01 16:27:57,260 - support-agent - INFO - Processing ticket ID=T2 with subject: Billing Refund Request
+2025-09-01 16:27:57,341 - support-agent - ERROR - Error processing ticket: Recursion limit of 100 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-09-01 16:27:57,345 - support-agent - ERROR - Traceback (most recent call last):
+  File "C:\Users\FAM\langgraph-support-agent\app\server.py", line 249, in process_ticket
+    result = graph.invoke(state, config={"recursion_limit": 100})
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 3026, in invoke
+    for chunk in self.stream(
+                 ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<10 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ):
+    ^
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 2675, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 100 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+
+2025-09-01 16:29:15,674 - support-agent - INFO - Received request on /api/process_ticket endpoint
+2025-09-01 16:29:15,675 - support-agent - INFO - Processing ticket ID=T2 with subject: Office Hours
+2025-09-01 16:29:15,678 - support-agent - INFO - Successfully processed ticket T2 in 0.00s: category=General, escalated=False
+2025-09-01 16:29:26,145 - support-agent - INFO - Received request on /api/process_ticket endpoint
+2025-09-01 16:29:26,145 - support-agent - INFO - Processing ticket ID=T3 with subject: Refund Request
+2025-09-01 16:29:26,215 - support-agent - ERROR - Error processing ticket: Recursion limit of 100 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-09-01 16:29:26,217 - support-agent - ERROR - Traceback (most recent call last):
+  File "C:\Users\FAM\langgraph-support-agent\app\server.py", line 249, in process_ticket
+    result = graph.invoke(state, config={"recursion_limit": 100})
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 3026, in invoke
+    for chunk in self.stream(
+                 ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<10 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ):
+    ^
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 2675, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 100 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+
+2025-09-01 16:29:40,349 - support-agent - INFO - Received request on /api/process_ticket endpoint
+2025-09-01 16:29:40,349 - support-agent - INFO - Processing ticket ID=T4 with subject: Account Breach
+2025-09-01 16:29:40,419 - support-agent - ERROR - Error processing ticket: Recursion limit of 100 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-09-01 16:29:40,422 - support-agent - ERROR - Traceback (most recent call last):
+  File "C:\Users\FAM\langgraph-support-agent\app\server.py", line 249, in process_ticket
+    result = graph.invoke(state, config={"recursion_limit": 100})
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 3026, in invoke
+    for chunk in self.stream(
+                 ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<10 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ):
+    ^
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 2675, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 100 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+
+2025-09-01 16:44:56,496 - support-agent - INFO - Building LangGraph workflow
+2025-09-01 16:44:56,512 - support-agent - INFO - Graph compiled successfully
+2025-09-01 16:45:04,564 - support-agent - ERROR - Top-level error
+Traceback (most recent call last):
+  File "C:\Users\FAM\langgraph-support-agent\app\server.py", line 157, in process_ticket
+    result = graph.invoke(state, config={"recursion_limit": 50})
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 3026, in invoke
+    for chunk in self.stream(
+                 ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<10 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ):
+    ^
+  File "C:\Users\FAM\langgraph-support-agent\venv\Lib\site-packages\langgraph\pregel\main.py", line 2675, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 50 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-09-01 16:46:15,330 - support-agent - INFO - Building LangGraph workflow
+2025-09-01 16:46:15,343 - support-agent - INFO - Graph compiled successfully
+2025-09-01 17:02:04,029 - support-agent - INFO - Building LangGraph workflow
+2025-09-01 17:02:04,043 - support-agent - INFO - Graph compiled successfully
+2025-09-01 17:05:02,113 - support-agent - INFO - Building LangGraph workflow
+2025-09-01 17:05:02,143 - support-agent - INFO - Graph compiled successfully
+2025-09-01 17:05:49,262 - support-agent - INFO - Building LangGraph workflow
+2025-09-01 17:05:49,287 - support-agent - INFO - Graph compiled successfully

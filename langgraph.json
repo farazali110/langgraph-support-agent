@@ -1,0 +1,12 @@
+{
+  "entry_point": "app.graph:app",
+  "dependencies": [
+    "fastapi",
+    "langgraph",
+    "langchain",
+    "uvicorn"
+  ],
+  "graphs": {
+    "support_agent": "app.graph:app"
+  }
+}
